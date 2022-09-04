@@ -854,7 +854,7 @@
 
 @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
   .trend__column {
-    width: 24.7 %;
+    width: 24.6%;
   }
 
   .trend__column:nth-child(-n + 3) {
