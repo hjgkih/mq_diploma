@@ -13,7 +13,7 @@
           <div class="header__logo">
             <a href="#0"><img src="svg/noemi-logo.svg" alt="Логотип"></a>
           </div>
-          <nav>
+         <!--  <nav> -->
             <ul class="header__nav">
               <li><a class="nav__link" href="#0">Главная</a></li>
               <li><a class="nav__link" href="#0">Посты</a></li>
@@ -22,7 +22,7 @@
               <li><a class="nav__link" href="#0">Темы</a></li>
               <li><a class="nav__link" href="#0">Контакты</a></li>
             </ul>
-          </nav>
+          <!-- </nav> -->
           <button class="button_nav">
             <span class="nav_burger"></span>
           </button>
@@ -262,12 +262,12 @@
               <h3 class="sidebar__title-head">Темы</h3>
             </div>
             <ul class="sidebar__themes_container">
-              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Красота<span class="num">12</span></a></li>
-              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Здоровье<span class="num">4</span></a></li>
-              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Образ жизни<span class="num">145</span></a></li>
-              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Музыка<span class="num">28</span></a></li>
-              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Спорт<span class="num">62</span></a></li>
-              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Йога<span class="num">8</span></a></li>
+              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Красота</a><span class="num">12</span></li>
+              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Здоровье</a><span class="num">4</span></li>
+              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Образ жизни</a><span class="num">145</span></li>
+              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Музыка</a><span class="num">28</span></li>
+              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Спорт</a><span class="num">62</span></li>
+              <li class="themes__list"><a href="#0" class="sidebar__theme__name">Йога</a><span class="num">8</span></li>
             </ul>
           </section>
         </aside>
@@ -369,15 +369,53 @@
     <footer class="footer">
       <section class="social">
         <ul class="social__container">
-          <li class="social__list"><a href="#0" class="social__driblle"></a><span class="visually-hidden">Перейти в Dribble</span></li>
-          <li class="social__list"><a href="#0" class="social__printerest"></a><span class="visually-hidden">Перейти в Pinterest</span></li>
-          <li class="social__list"><a href="#0" class="social__tumblr"></a><span class="visually-hidden">Перейти в Tumblr</span></li>
+          <li class="social__list"><a href="#0" class="social__driblle"><span class="visually-hidden">Перейти в Dribble</span></a></li>
+          <li class="social__list"><a href="#0" class="social__printerest"><span class="visually-hidden">Перейти в Pinterest</span></a></li>
+          <li class="social__list"><a href="#0" class="social__tumblr"><span class="visually-hidden">Перейти в Tumblr</span></a></li>
         </ul>
 
       </section>
       <section class="copyright">
         <div class="footer__copyright"><a href="#0" class="footer__copyright-link">Copyright © 2009–2019 City Blog LLC.</a></div>
       </section>
-    </footer>	  
+    </footer>
+
+<!--     <section class="popup">
+      <div class="popup__container">
+        <div class="popup__btn-close"></div>
+        <h3 class="popup__title">Ваш фидбек</h3>
+        <div class="popup__main">
+          <div class="popup__select">
+            <label class="popup__frequency" for="frequency">Как часто вы заходите на сайт?</label>
+            <select class="popup__frequency-variants" id="frequency">
+              <option value="everyday">Почти каждый день</option>
+              <option value="onceadays">Раз в несколько дней</option>
+              <option value="onceamounth">Раз в несколько недель</option>
+              <option value="severalayear">Несколько раз в год</option>
+            </select>
+          </div>
+          <div class="popup__radio">
+            <form class="radio__form">
+              <p class="">Вы подписаны на e-mail рассылку?</p>
+              <div class="radio__buttons">
+                <input type="radio" id="choice1" name="yes-btn" value="yes" />
+                <label for="contactChoice1">Да</label>
+                <input type="radio" id="choice2" name="no-btn" value="no" />
+                <label for="contactChoice1">Нет</label>
+              </div>
+            </form>
+          </div>
+          <div class="popup__input">
+            <form class="popup__input-form">
+              <label class="visually-hidden" for="input__field">Поле для ввода Вашего email-адреса</label>
+              <input class="popup__input-field" id="input__field" placeholder="Может, больше рецептов?" type="text" required>
+            </form>
+          </div>
+          <div class="popup__btn-sent">
+            <button class="sidebar__subscribe-button">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section>   -->
   </body>
 </html>
