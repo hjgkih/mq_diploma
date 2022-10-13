@@ -7,13 +7,51 @@
 	 <link rel="stylesheet" href=" css/style.css">
   </head>
   <body>
+    <div class="-hidden">
+      <section class="popup -hidden">
+        <div class="popup__container">
+          <h3 class="popup__title">Ваш фидбек</h3>
+          <form class="popup__feedback">
+            <div class="popup__select">
+              <label class="select__title" for="select__lable">Как часто вы заходите на сайт?</label>
+              <select class="select" id="select__lable">
+                <option class="select__option" selected="">Почти каждый день</option>
+                <option class="select__option">Раз в несколько дней</option>
+                <option class="select__option">Раз в несколько недель</option>
+                <option class="select__option">Несколько раз в год</option>
+              </select>
+            </div>
+            <div>
+              <span class="radio__title">Вы подписаны на e-mail рассылку?</span>
+              <div class="popup__radio">
+                <div>
+                  <input class="radio__group" id="yes" type="radio" name="sign" value="yes" checked="">
+                  <label class="checked__yes" for="yes">Да</label>
+                </div>
+                <div>
+                  <input class="radio__group" id="no" type="radio" name="sign" value="no">
+                  <label class="checked__no" for="no">Нет</label>
+                </div>
+              </div>
+            </div>
+            <div class="popup__textarea">
+              <label class="textarea__title" for="textarea__lable">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+              <textarea class="textarea" name="comment" id="textarea__lable" placeholder="Может, больше рецептов?"></textarea>
+            </div>
+            <button class="popup__send">Отправить</button>
+          </form>
+          <div class="close__container">
+            <button class="popup__close" type="button">Закрыть окно</button>
+          </div>
+        </div>
+      </section>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
             <a href="#0"><img src="svg/noemi-logo.svg" alt="Логотип"></a>
           </div>
-         <!--  <nav> -->
             <ul class="header__nav">
               <li><a class="nav__link" href="#0">Главная</a></li>
               <li><a class="nav__link" href="#0">Посты</a></li>
@@ -22,7 +60,6 @@
               <li><a class="nav__link" href="#0">Темы</a></li>
               <li><a class="nav__link" href="#0">Контакты</a></li>
             </ul>
-          <!-- </nav> -->
           <button class="button_nav">
             <span class="nav_burger"></span>
           </button>
@@ -379,43 +416,5 @@
         <div class="footer__copyright"><a href="#0" class="footer__copyright-link">Copyright © 2009–2019 City Blog LLC.</a></div>
       </section>
     </footer>
-
-<!--     <section class="popup">
-      <div class="popup__container">
-        <div class="popup__btn-close"></div>
-        <h3 class="popup__title">Ваш фидбек</h3>
-        <div class="popup__main">
-          <div class="popup__select">
-            <label class="popup__frequency" for="frequency">Как часто вы заходите на сайт?</label>
-            <select class="popup__frequency-variants" id="frequency">
-              <option value="everyday">Почти каждый день</option>
-              <option value="onceadays">Раз в несколько дней</option>
-              <option value="onceamounth">Раз в несколько недель</option>
-              <option value="severalayear">Несколько раз в год</option>
-            </select>
-          </div>
-          <div class="popup__radio">
-            <form class="radio__form">
-              <p class="">Вы подписаны на e-mail рассылку?</p>
-              <div class="radio__buttons">
-                <input type="radio" id="choice1" name="yes-btn" value="yes" />
-                <label for="contactChoice1">Да</label>
-                <input type="radio" id="choice2" name="no-btn" value="no" />
-                <label for="contactChoice1">Нет</label>
-              </div>
-            </form>
-          </div>
-          <div class="popup__input">
-            <form class="popup__input-form">
-              <label class="visually-hidden" for="input__field">Поле для ввода Вашего email-адреса</label>
-              <input class="popup__input-field" id="input__field" placeholder="Может, больше рецептов?" type="text" required>
-            </form>
-          </div>
-          <div class="popup__btn-sent">
-            <button class="sidebar__subscribe-button">Отправить</button>
-          </div>
-        </div>
-      </div>
-    </section>   -->
   </body>
 </html>
